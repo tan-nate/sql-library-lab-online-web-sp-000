@@ -8,7 +8,7 @@ INSERT INTO books (id, title, year, series_id) VALUES (1, "Game of Thrones", 199
 
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (1, "Lady", "Woof Woof", "direwolf", 1, 1), (2, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1), (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1), (4, "Eddard Stark", "Winter is coming", "human", 1, 1);
 
-SELECT Series.title 
+SELECT * 
 FROM Characters INNER JOIN Series 
 ON Characters.series_id = Series.id
 

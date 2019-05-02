@@ -17,4 +17,5 @@ INSERT INTO character_books (id, book_id, character_id) VALUES (9, 4, 5), (10, 4
 SELECT Characters.name, COUNT(Characters.id)
 FROM Character_books INNER JOIN Characters
 ON Character_books.character_id = Characters.id
-GROUP BY Characters.id;
+GROUP BY Characters.id
+ORDER BY COUNT(Characters.id) DESC;
